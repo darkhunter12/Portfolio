@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full Stack Developer Portfolio of Abhishek Saroj">
+  <meta property="og:title" content="Abhishek Saroj | Full Stack Developer">
+  <meta property="og:description" content="MCA graduate skilled in Node.js, Java, MongoDB, WordPress.">
   <title>Abhishek Saroj | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +18,8 @@
     <div class="container header-content">
       <h1 class="logo">Abhishek Saroj</h1>
       <nav>
-        <ul class="nav-links">
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -24,6 +29,12 @@
       </nav>
     </div>
   </header>
+
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
 
   <main>
     <section id="hero" class="section">
@@ -50,9 +61,51 @@
     <section id="projects" class="section">
       <div class="container">
         <h3>Projects</h3>
+
+
+        <div class="project glass">
+          <h4>Crypto Price Dashboard</h4>
+          <p>Developed a real-time cryptocurrency price dashboard that tracks Bitcoin and Ethereum prices using the CoinGecko API. The backend, built with Node.js, fetches and stores live price data in MongoDB. The frontend, designed using HTML/CSS/JavaScript, displays up-to-date prices that auto-refresh every few seconds.
+             Implemented RESTful API endpoints to fetch and update the data efficiently. The application is modular and easily extendable to include more coins and visual analytics in the future.</p>
+          <p><strong>Stack:</strong> Node.js, MongoDB, HTML, CSS, JavaScript, CoinGecko API</p>
+          <p><strong>Key Features:</strong> 
+           <li>Real-time price tracking for BTC and ETH</li>
+           <li>MongoDB-based historical data storage</li> 
+           <li>REST API architecture for scalability</li> 
+           <li>Auto-refreshing frontend display</li> 
+          </p> 
+        </div>
+
+        <div class="project glass">
+          <h4>AI Text-to-Video Generator App</h4>
+          <p>Developed an AI-powered web application that converts user-inputted text into videos with voice-over narration. The backend, built in Node.js, processes the input text using free text-to-speech (TTS) APIs and dynamically generates video scenes using FFmpeg.
+             The frontend allows users to enter a script, preview the narration, and download the final video file. This project demonstrates integration of media tools, automation, and real-time file generation using server-side scripting.</p>
+          <p><strong>Stack:</strong> Node.js, JavaScript, HTML/CSS, FFmpeg, Free TTS APIs</p>
+          <p><strong>Key Features:</strong> 
+           <li>Converts any text into narrated video</li>
+           <li>Integrates free TTS APIs for realistic voice-over</li> 
+           <li>Dynamically creates scenes using FFmpeg</li> 
+           <li>User interface for script input, preview, and download</li>
+           <li>Easily extendable with templates or image/video backgrounds</li>  
+          </p> 
+        </div>
+
+         <div class="project glass">
+          <h4>Portfolio Website – “Dark Hunter”</h4>
+          <p>Designed a high-tech-themed personal portfolio website named “Dark Hunter” to showcase projects, skills, and achievements. The website features a sleek, responsive design, smooth transitions, and project cards with links.
+             Planned future integration of downloadable resume, contact form, and GitHub/LinkedIn links for professional networking.</p>
+          <p><strong>Stack:</strong> HTML, CSS, JavaScript (Frontend only)</p>
+          <p><strong>Key Features:</strong> 
+           <li>Custom high-tech UI design</li>
+           <li>Responsive layout for mobile and desktop</li> 
+           <li>Project and skill showcase sections</li> 
+           <li>Easy-to-update code structure</li>
+          </p> 
+        </div>
+
         <div class="project glass">
           <h4>Groupies Web App</h4>
-          <p>Video calling app with chat, screen share, recording, login, and feedback system.</p>
+          <p>Designed and developed a Real-Time Communication Web App for seamless online collaboration. It supports 1-on-1 and group video/audio calls with multiple participants, real-time text chat, screen sharing, and both video and screen recording. Users can toggle audio/video streams, securely log in/out, and provide feedback, making it ideal for virtual meetings, online classes, and collaborative projects.</p>
           <p><strong>Stack:</strong> Node.js, Express, MongoDB, HTML, CSS, JS</p>
         </div>
         <div class="project glass">
@@ -61,7 +114,15 @@
         </div>
         <div class="project glass">
           <h4>Online Teaching Platform</h4>
-          <p>Virtual learning site developed with ASP.NET and MSSQL.</p>
+          <p>Designed and developed a virtual learning platform to facilitate interaction between teachers and students. The system allowed user registration with role-based access (student/teacher), course creation, class scheduling, and material sharing.
+            SQL Server handled backend data such as course content, user credentials, and schedules. The application mimicked the functionality of a basic virtual classroom.</p>
+          <p><strong>Stack:</strong> ASP.NET, MSSQL Server</p>
+          <p><strong>Key Features:</strong> 
+           <li>User authentication and role management</li>
+           <li>Course and lecture module</li> 
+           <li>File uploads for study material</li> 
+           <li>SQL-based scheduling and reporting</li> 
+          </p> 
         </div>
       </div>
     </section>
@@ -89,5 +150,12 @@
       <p>&copy; 2025 Abhishek Saroj. All rights reserved.</p>
     </div>
   </footer>
+
+   <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
