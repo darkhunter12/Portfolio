@@ -227,3 +227,41 @@ h1, h2 {
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: row; /* keep logo and hamburger on same row */
+    justify-content: space-between; /* logo left, hamburger right */
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative; /* stays in flow but on the right */
+    font-size: 30px;
+    cursor: pointer;
+    color: #61dafb;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
