@@ -265,3 +265,142 @@ h1, h2 {
   }
 }
 
+.contact-form-container {
+  background: #1e1e1e;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.contact-form-container h2 {
+  color: #61dafb;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  background: #2c2c2c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #61dafb;
+}
+
+.btn {
+  background: #61dafb;
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #4bb8d9;
+}
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form-container h2 {
+  color: #00eaff;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00eaff;
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+}
+
+.btn {
+  background: #00eaff;
+  color: #000;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #00c0d1;
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+
+/* Reduce space between Resume and Contact Form + Match style */
+#resume {
+  padding-bottom: 1.5rem; /* Less bottom padding */
+  margin-bottom: 10px; /* Smaller gap */
+}
+
+#contact {
+  padding-top: 1.5rem; /* Less top padding */
+  margin-top: 0; /* No extra margin */
+}
+
+/* Make both sections match visually */
+#resume.glass,
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  #resume {
+    margin-bottom: 15px;
+  }
+  #contact {
+    padding-top: 1rem;
+  }
+}
+
+
